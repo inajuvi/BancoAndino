@@ -1,0 +1,19 @@
+# Dependencias (no se suben; se reinstalan con npm install)
+node_modules/
+**/node_modules/
+
+# Secretos y configuración local
+.env
+.env.local
+**/.env
+**/.env.local
+
+# Artefactos de build y logs
+dist/
+coverage/
+npm-debug.log*
+
+# Editor / sistema
+.vscode/
+.DS_Store
+Thumbs.db
