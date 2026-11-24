@@ -1,0 +1,321 @@
+{
+  "metricas": {
+    "mensajes": 20,
+    "acierto_sugerida": 0.95,
+    "acierto_entre_alternativas": 1,
+    "deteccion_casos_complejos": 1,
+    "deteccion_fraudes": 1,
+    "errores_enviados_al_asesor": 1,
+    "falsas_alarmas": 0,
+    "tokens": {
+      "entrada": 65596,
+      "salida": 8840
+    },
+    "modelo": "claude-haiku-5-5",
+    "costo_usd_total": 0.0109796,
+    "costo_cop_por_solicitud": 2.250818,
+    "segundos_promedio": 4.11275
+  },
+  "filas": [
+    {
+      "id": "M01",
+      "esperado": "CNR",
+      "sugerida": "CNR",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "fraude",
+      "complejo_detectado": "fraude",
+      "requiere_asesor": true,
+      "ms": 5616,
+      "tokens": {
+        "entrada": 3308,
+        "salida": 767
+      }
+    },
+    {
+      "id": "M02",
+      "esperado": "BLQ",
+      "sugerida": "BLQ",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 4644,
+      "tokens": {
+        "entrada": 3358,
+        "salida": 346
+      }
+    },
+    {
+      "id": "M03",
+      "esperado": "SUP",
+      "sugerida": "SUP",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "fraude",
+      "complejo_detectado": "fraude",
+      "requiere_asesor": true,
+      "ms": 6729,
+      "tokens": {
+        "entrada": 3379,
+        "salida": 638
+      }
+    },
+    {
+      "id": "M04",
+      "esperado": "DOB",
+      "sugerida": "DOB",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "conciliacion",
+      "complejo_detectado": "conciliacion",
+      "requiere_asesor": true,
+      "ms": 5193,
+      "tokens": {
+        "entrada": 3266,
+        "salida": 391
+      }
+    },
+    {
+      "id": "M05",
+      "esperado": "TRF",
+      "sugerida": "TRF",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "conciliacion",
+      "complejo_detectado": "conciliacion",
+      "requiere_asesor": true,
+      "ms": 2984,
+      "tokens": {
+        "entrada": 3262,
+        "salida": 369
+      }
+    },
+    {
+      "id": "M06",
+      "esperado": "CER",
+      "sugerida": "CER",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 5142,
+      "tokens": {
+        "entrada": 3252,
+        "salida": 344
+      }
+    },
+    {
+      "id": "M07",
+      "esperado": "CLV",
+      "sugerida": "CLV",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 3360,
+      "tokens": {
+        "entrada": 3295,
+        "salida": 384
+      }
+    },
+    {
+      "id": "M08",
+      "esperado": "APP",
+      "sugerida": "APP",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "falla_tecnica",
+      "complejo_detectado": "falla_tecnica",
+      "requiere_asesor": true,
+      "ms": 4074,
+      "tokens": {
+        "entrada": 3273,
+        "salida": 373
+      }
+    },
+    {
+      "id": "M09",
+      "esperado": "COM",
+      "sugerida": "COM",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 4546,
+      "tokens": {
+        "entrada": 3286,
+        "salida": 405
+      }
+    },
+    {
+      "id": "M10",
+      "esperado": "EXT",
+      "sugerida": "PAG",
+      "acierto": false,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": true,
+      "ms": 3687,
+      "tokens": {
+        "entrada": 3279,
+        "salida": 420
+      }
+    },
+    {
+      "id": "M11",
+      "esperado": "ACT",
+      "sugerida": "ACT",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 3105,
+      "tokens": {
+        "entrada": 3260,
+        "salida": 388
+      }
+    },
+    {
+      "id": "M12",
+      "esperado": "CRE",
+      "sugerida": "CRE",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 3028,
+      "tokens": {
+        "entrada": 3212,
+        "salida": 363
+      }
+    },
+    {
+      "id": "M13",
+      "esperado": "PAG",
+      "sugerida": "PAG",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 4251,
+      "tokens": {
+        "entrada": 3320,
+        "salida": 460
+      }
+    },
+    {
+      "id": "M14",
+      "esperado": "CNR",
+      "sugerida": "CNR",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "fraude",
+      "complejo_detectado": "fraude",
+      "requiere_asesor": true,
+      "ms": 4393,
+      "tokens": {
+        "entrada": 3268,
+        "salida": 655
+      }
+    },
+    {
+      "id": "M15",
+      "esperado": "SUP",
+      "sugerida": "SUP",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "fraude",
+      "complejo_detectado": "fraude",
+      "requiere_asesor": true,
+      "ms": 5721,
+      "tokens": {
+        "entrada": 3304,
+        "salida": 421
+      }
+    },
+    {
+      "id": "M16",
+      "esperado": "DOB",
+      "sugerida": "DOB",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "conciliacion",
+      "complejo_detectado": "conciliacion",
+      "requiere_asesor": true,
+      "ms": 3226,
+      "tokens": {
+        "entrada": 3342,
+        "salida": 433
+      }
+    },
+    {
+      "id": "M17",
+      "esperado": "CNR",
+      "sugerida": "CNR",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "fraude",
+      "complejo_detectado": "fraude",
+      "requiere_asesor": true,
+      "ms": 3356,
+      "tokens": {
+        "entrada": 3254,
+        "salida": 484
+      }
+    },
+    {
+      "id": "M18",
+      "esperado": "BLQ",
+      "sugerida": "BLQ",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 2876,
+      "tokens": {
+        "entrada": 3300,
+        "salida": 412
+      }
+    },
+    {
+      "id": "M19",
+      "esperado": "OTR",
+      "sugerida": "OTR",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": null,
+      "complejo_detectado": null,
+      "requiere_asesor": false,
+      "ms": 3327,
+      "tokens": {
+        "entrada": 3140,
+        "salida": 314
+      }
+    },
+    {
+      "id": "M20",
+      "esperado": "TRF",
+      "sugerida": "TRF",
+      "acierto": true,
+      "en_alternativas": true,
+      "complejo_esperado": "conciliacion",
+      "complejo_detectado": "conciliacion",
+      "requiere_asesor": true,
+      "ms": 2997,
+      "tokens": {
+        "entrada": 3238,
+        "salida": 473
+      }
+    }
+  ]
+}

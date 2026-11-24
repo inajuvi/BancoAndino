@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Consola del asesor · Banco Andino</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar__inner">
+    <span class="logo" aria-hidden="true">BA</span>
+    <div>
+      <p class="topbar__brand">Banco Andino</p>
+      <p class="topbar__sub">Consola del asesor · PoC de categorización</p>
+    </div>
+    <span class="topbar__modelo" id="modelo"></span>
+  </div>
+</header>
+
+<main class="container">
+  <section>
+    <h1>Registrar una solicitud</h1>
+    <p class="lead">Ingresa el caso para que el sistema lo categorice. El texto original no se guarda: solo su versión protegida.</p>
+
+    <form class="card" id="form" novalidate>
+      <div class="ejemplos" id="ejemplos">Ejemplos ficticios:</div>
+
+      <h2 class="card__title">Datos de la solicitud</h2>
+      <p class="hint">Los campos con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+      <div class="grid">
+        <div class="field">
+          <label for="id_caso">Identificador del caso<span class="required" aria-hidden="true"> *</span></label>
+          <p class="hint">Ej. CASO-0001</p>
+          <input id="id_caso" maxlength="36" autocomplete="off" required>
+        </div>
+        <div class="field">
+          <label for="canal">Canal de atención<span class="required" aria-hidden="true"> *</span></label>
+          <p class="hint">&nbsp;</p>
+          <select id="canal" required>
+            <option value="">Selecciona un canal…</option>
+            <option value="CALL_CENTER">Call center</option>
+            <option value="WHATSAPP">WhatsApp</option>
+            <option value="REDES_SOCIALES">Redes sociales</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="texto">Texto del cliente o transcripción<span class="required" aria-hidden="true"> *</span></label>
+        <p class="hint">Copia el mensaje tal cual lo escribió el cliente o la transcripción de la llamada.</p>
+        <textarea id="texto" rows="6" required></textarea>
+        <p class="counter" id="contador">5000 caracteres disponibles</p>
+      </div>
+
+      <h2 class="card__title">Salida de “Identificar la solicitud” (A3)</h2>
+      <div class="field">
+        <label for="resumen">Resumen de lo que pide el cliente<span class="optional"> (opcional)</span></label>
+        <textarea id="resumen" rows="2" maxlength="2000"></textarea>
+      </div>
+      <div class="grid">
+        <div class="field">
+          <label for="tono">Tono del cliente<span class="optional"> (opcional)</span></label>
+          <select id="tono">
+            <option value="">Sin especificar</option><option>Neutro</option><option>Preocupado</option><option>Molesto</option><option>Urgente</option>
+          </select>
+        </div>
+      </div>
+      <fieldset class="datos">
+        <legend>Datos extraídos <span class="optional">(opcional)</span></legend>
+        <p class="hint">Por ejemplo: monto, fecha de la transacción o comercio. No incluyas datos personales.</p>
+        <div id="filas"></div>
+        <button type="button" class="btn btn--secondary" id="agregar">+ Agregar dato</button>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit" class="btn btn--primary" id="enviar">Registrar y categorizar</button>
+        <button type="button" class="btn btn--ghost" id="limpiar">Limpiar formulario</button>
+      </div>
+    </form>
+  </section>
+
+  <section>
+    <div class="pasos">
+      <span class="paso" data-p="vault">1. Privacy Vault</span>
+      <span class="paso" data-p="agentes">2. Clasificador + Detector</span>
+      <span class="paso" data-p="validador">3. Validador</span>
+      <span class="paso" data-p="orq">4. Orquestador y reglas</span>
+    </div>
+    <div class="card" id="resultado"><div class="vacio">Registra una solicitud para ver la categoría sugerida.</div></div>
+  </section>
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
