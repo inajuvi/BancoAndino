@@ -1,0 +1,22 @@
+{
+  "name": "banco-andino-demo-categorizacion",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Segunda iteración: demo local de la categorización multiagente (A4) de Banco Andino",
+  "type": "module",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "test": "node --test",
+    "evaluar": "node --env-file=.env scripts/evaluar.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.12.0",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.5",
+    "helmet": "^8.3.0",
+    "zod": "^4.6.7"
+  }
+}

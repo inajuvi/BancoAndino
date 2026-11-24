@@ -1,0 +1,22 @@
+[
+  { "id": "M01", "canal": "WHATSAPP", "esperado": "CNR", "complejo": "fraude", "texto": "Buenas, me acaba de llegar un mensaje de una compra en Amazon por $480.000 y yo no he comprado nada. Tengo la tarjeta aquí conmigo." },
+  { "id": "M02", "canal": "CALL_CENTER", "esperado": "BLQ", "complejo": null, "texto": "Cliente: Hola, perdí la billetera anoche en un taxi y ahí estaba la tarjeta débito. Quiero bloquearla ya. Asesor: ¿Ha visto algún movimiento extraño? Cliente: No, por ahora nada." },
+  { "id": "M03", "canal": "REDES_SOCIALES", "esperado": "SUP", "complejo": "fraude", "texto": "Me llamaron diciendo que eran del área de seguridad del banco y me pidieron el código que me llegó por mensaje para 'cancelar una compra'. Les di el código y ahora estoy asustada." },
+  { "id": "M04", "canal": "WHATSAPP", "esperado": "DOB", "complejo": "conciliacion", "texto": "Pagué el recibo de la luz desde la app y me aparece el débito dos veces en el extracto. La empresa dice que solo recibió un pago." },
+  { "id": "M05", "canal": "WHATSAPP", "esperado": "TRF", "complejo": "conciliacion", "texto": "Le transferí 2 millones a mi hermana a Bancolombia el viernes, a mí me descontaron la plata pero a ella nunca le llegó." },
+  { "id": "M06", "canal": "CALL_CENTER", "esperado": "CER", "complejo": null, "texto": "Cliente: Necesito el certificado de retención en la fuente del año pasado para la declaración de renta. ¿Me lo pueden enviar al correo?" },
+  { "id": "M07", "canal": "WHATSAPP", "esperado": "CLV", "complejo": null, "texto": "Se me olvidó la clave de la app, la intenté varias veces y ya me salió que el usuario quedó bloqueado. ¿Cómo la desbloqueo?" },
+  { "id": "M08", "canal": "REDES_SOCIALES", "esperado": "APP", "complejo": "falla_tecnica", "texto": "Desde ayer la app se cierra apenas intento hacer una transferencia. Ya la reinstalé y nada. Necesito pagar la nómina hoy." },
+  { "id": "M09", "canal": "WHATSAPP", "esperado": "COM", "complejo": null, "texto": "¿Por qué me cobraron cuota de manejo este mes si cuando abrí la tarjeta me dijeron que era gratis el primer año?" },
+  { "id": "M10", "canal": "WHATSAPP", "esperado": "EXT", "complejo": null, "texto": "Hola, ¿me pueden decir cuánto debo de la tarjeta de crédito y cuándo es la fecha de corte?" },
+  { "id": "M11", "canal": "CALL_CENTER", "esperado": "ACT", "complejo": null, "texto": "Cliente: Cambié de número de celular y de dirección, quiero actualizar mis datos para que me lleguen las notificaciones." },
+  { "id": "M12", "canal": "REDES_SOCIALES", "esperado": "CRE", "complejo": null, "texto": "Quisiera saber qué requisitos piden para un crédito de libre inversión y cuál es la tasa para 36 meses." },
+  { "id": "M13", "canal": "WHATSAPP", "esperado": "PAG", "complejo": null, "texto": "¿Puedo pagar la cuota del crédito de vehículo por PSE desde otro banco o tiene que ser en una oficina?" },
+  { "id": "M14", "canal": "WHATSAPP", "esperado": "CNR", "complejo": "fraude", "texto": "Me robaron el celular el sábado y hoy veo tres retiros en cajero que yo no hice. ¿Qué hago?" },
+  { "id": "M15", "canal": "REDES_SOCIALES", "esperado": "SUP", "complejo": "fraude", "texto": "Me llegó un correo con el logo del banco diciendo que mi cuenta se iba a suspender y que entrara a un link para verificar mis datos. ¿Es real?" },
+  { "id": "M16", "canal": "CALL_CENTER", "esperado": "DOB", "complejo": "conciliacion", "texto": "Cliente: Hice el abono a la tarjeta de crédito el 5, pero en el extracto no aparece aplicado y ya me cobraron intereses de mora." },
+  { "id": "M17", "canal": "WHATSAPP", "esperado": "CNR", "complejo": "fraude", "texto": "En el extracto me aparece una suscripción mensual a una plataforma que nunca contraté. Lleva tres meses cobrándome." },
+  { "id": "M18", "canal": "WHATSAPP", "esperado": "BLQ", "complejo": null, "texto": "Creo que dejé la tarjeta en el supermercado. ¿La pueden bloquear mientras voy a buscarla? No he visto compras raras." },
+  { "id": "M19", "canal": "REDES_SOCIALES", "esperado": "OTR", "complejo": null, "texto": "¿A qué hora abren la oficina del centro comercial Santafé los domingos?" },
+  { "id": "M20", "canal": "WHATSAPP", "esperado": "TRF", "complejo": "conciliacion", "texto": "Hice una transferencia por Bre-B, la app me dio error pero igual me descontaron el dinero y el destinatario no lo tiene." }
+]
